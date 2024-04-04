@@ -6,18 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOMEWORK 11</title>
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <form class="search-form">
-    <input type="text" name="query" placeholder="Search images..." id="search-input" />
-    <button type="submit" id="search-button">Search</button>
+    <input class="input" type="text" name="query" placeholder="Search images..." id="search-input" />
+    <button class="button" type="submit" id="search-button">Search</button>
   </form>
-  <div class="container">
-    <ul class="gallery"></ul>
-  </div>
+  <div class="loader is-hidden"></div>
+  <ul class="gallery"></ul>
   <script type="module" src="./main.js"></script>
 </body>
 
 </html>
-<!--  -->

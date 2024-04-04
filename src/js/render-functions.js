@@ -21,19 +21,15 @@ function imgTemplate(data) {
             alt="${tags}"
           />
           <ul class="gallery-description">
-          <li><h3>Likes</h3><p>${likes}</p>
-          </li>
-          <li><h3>Views</h3><p>${views}</p>
-            </li>
-            <li><h3>Comments</h3><p>${comments}</p>
-              </li>
-              <li><h3>Downloads</h3><p>${downloads}</p>
-                </li>
+            <li class="gallery-description-item"><span class="gallery-description-span">Likes</span>${likes}</li>
+            <li class="gallery-description-item"><span class="gallery-description-span">Views</span>${views}</li>
+            <li class="gallery-description-item"><span class="gallery-description-span">Comments</span>${comments}</li>
+            <li class="gallery-description-item"><span class="gallery-description-span">Downloads</span>${downloads}</li>
           </ul>
         </a>
       </li>`;
 }
-// =+++++++++++++++++++++++++++++++++++
+// =========================================
 export function imagesTemplate(arr) {
   return arr.map(imgTemplate).join('');
 }
